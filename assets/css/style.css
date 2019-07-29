@@ -1,0 +1,8 @@
+body {
+    background-image: url(../images/clouds.jpg);
+    color: rgb(58, 199, 241);
+    background-position: center;
+    background-position: no-repeat;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
