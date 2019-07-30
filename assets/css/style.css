@@ -4,6 +4,7 @@ body {
     color: #Ffffff;
     background-position: center;
     background-position: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -11,6 +12,12 @@ body {
 #wrapper {
     background-color: #ffffff;
     color: #ff952b;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 90%;
 }
 
 #start {

@@ -47,7 +47,8 @@ var game = {
         }
     },
     renderquestion: function() {
-
+        game = setInterval(game.countdown, 1000);
+        $("#subwrapper").html("<h2>" + questions + "<h2>");
     },
     nextquestion: function() {
 
@@ -74,11 +75,9 @@ var game = {
 };
 
 // FUNCTIONS
-function startGame() {
-
-    // MAIN GAME INITIATION
-    startGame();
-    $("#start").on("click", function(event) {
-        $("#start").hide(); // remove start button
-
-    });
+function startGame() {}
+// MAIN GAME INITIATION
+startGame();
+$("#start").on("click", function(event) {
+    $("#start").hide(); // remove start button
+});
