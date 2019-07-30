@@ -1,7 +1,6 @@
-$("#start").on("click", function() {
-    $("#start").remove();
-})
-
+// VARIABLES
+console.log("page loaded");
+// define object array for each question (var questions)
 var questions = [{
     question: "What is Wayne's best friend's last name?",
     choices: ["Campbell, Smith, Algar, McKeeta"],
@@ -27,5 +26,59 @@ var questions = [{
     choices: "Foxy, Dreamweaver, Feed My Frankenstein, Bohemian Rhapsody",
     answer: "Dreamweaver",
     image: ""
+}];
 
-}]
+// define objects of game components (var game)
+var game = {
+    questionsProperty: questions,
+    currentQuestion: 0, //what question on
+    counter: 30,
+    correctAnswer: 0,
+    incorrectAnswer: 0,
+
+    // what functions of objects (methods) needed to get game to work?
+    // setting countdown function
+    countdown: function() {
+        game.counter--;
+        $("#counter").html(game.counter);
+        if (game.counter <= 0) {
+            console.log("times up!");
+            game.timesup();
+        }
+    },
+    renderquestion: function() {
+
+    },
+    nextquestion: function() {
+
+    },
+    congratulations: function() {
+
+    },
+    bummer: function() {
+
+    },
+    timesup: function() {
+
+    },
+    reset: function() {
+
+    },
+    results: function() {
+
+    },
+    clicked: function() {
+
+    }
+
+};
+
+// FUNCTIONS
+function startGame() {
+
+    // MAIN GAME INITIATION
+    startGame();
+    $("#start").on("click", function(event) {
+        $("#start").hide(); // remove start button
+
+    });
