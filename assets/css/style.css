@@ -20,6 +20,10 @@ body {
     padding-bottom: 90%;
 }
 
+#subwrapper {
+    color: #ff952b;
+}
+
 #start {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #Ffffff;

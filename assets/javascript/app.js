@@ -1,5 +1,9 @@
+$("#start").on("click", function() {
+    $("#start").remove(); // remove start button
+    game.renderQuestion(); // render question
+})
+
 // VARIABLES
-console.log("page loaded");
 // define object array for each question (var questions)
 var questions = [{
     question: "What is Wayne's best friend's last name?",
@@ -30,7 +34,7 @@ var questions = [{
 
 // define objects of game components (var game)
 var game = {
-    questionsProperty: questions,
+    question: questions,
     currentQuestion: 0, //what question on
     counter: 30,
     correctAnswer: 0,
@@ -46,9 +50,15 @@ var game = {
             game.timesup();
         }
     },
-    renderquestion: function() {
-        game = setInterval(game.countdown, 1000);
-        $("#subwrapper").html("<h2>" + questions + "<h2>");
+    renderQuestion: function() {
+        timer = setInterval(game.countdown, 1000);
+        $("#subwrapper").html('<h2>' + questions[game.currentQuestion].question + '<h2>');
+        for (var i = 0; i < questions[game.currentQuestion].choices.length; i++) {
+            // adding buttons for 
+            $("#subwrapper").append('<button class="answer-button" id="button-' + i + '" data-name="' +
+                questions[game.currentQuestion].choices[i] + '">' + questions[game.currentQuestion]
+                .choices[i] + '</button>');
+        }
     },
     nextquestion: function() {
 
@@ -72,12 +82,8 @@ var game = {
 
     }
 
+
 };
 
-// FUNCTIONS
-function startGame() {}
-// MAIN GAME INITIATION
-startGame();
-$("#start").on("click", function(event) {
-    $("#start").hide(); // remove start button
-});
+// FUNCTION TO START GAME
+function startGame() {};
