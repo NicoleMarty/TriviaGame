@@ -64,11 +64,23 @@ var game = {
                 .choices[i] + '</button>');
         }
     },
+    // e short for event to pass through what is clicked
+    clicked: function(e) {
+        clearInterval(timer);
+        if ($(e.target).data("answer").trim() === questions[game.currentQuestion].answer) { //target is what clicked
+            game.congratulations();
+        } else {
+            game.bummer();
+        };
+    },
     congratulations: function() {
         console.log("PARTY ON!");
     },
     bummer: function() {
-        console.log("BUMMER...");
+        console.log("BUMMER");
+
+    },
+    timesup: function() {
 
     },
     nextquestion: function() {
@@ -76,28 +88,14 @@ var game = {
         $("#counter").html(game.counter);
         game.currentQuestion++;
         game.renderQuestion();
-
     },
-
-    timesup: function() {
+    results: function() {
 
     },
     reset: function() {
 
     },
-    results: function() {
 
-    },
-    // e short for event to pass through what is clicked
-    clicked: function(e) {
-        clearInterval(timer);
-        if ($(e.target).data("answer") === questions[game.currentQuestion].answer) {
-            game.congratulations();
-        } else {
-            game.bummer();
-        }
-
-    }
 
 
 };
