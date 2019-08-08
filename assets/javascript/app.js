@@ -75,12 +75,28 @@ var game = {
     },
     congratulations: function() {
         console.log("PARTY ON!");
+        clearInterval(timer);
+        game.correctAnswer++;
+        $("#subwrapper").html("<h2>PARTY ON!</h2>");
+        if (game.currentQuestion === questions.length - 1) {
+            setTimeout(game.results, 3 * 1000);
+        } else {
+            setTimeout(game.nextquestion, 3 * 1000);
+        }
     },
     bummer: function() {
         console.log("BUMMER");
-
+        clearInterval(timer);
+        game.incorrectAnswer++;
+        $("#subwrapper").html("<h2>BUMMER</h2>");
+        if (game.currentQuestion === questions.length - 1) {
+            setTimeout(game.results, 3 * 1000);
+        } else {
+            setTimeout(game.nextquestion, 3 * 1000);
+        }
     },
     timesup: function() {
+
 
     },
     nextquestion: function() {
@@ -90,7 +106,7 @@ var game = {
         game.renderQuestion();
     },
     results: function() {
-
+        console.log("results!");
     },
     reset: function() {
 
