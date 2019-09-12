@@ -13,7 +13,7 @@ var questions = [{
     question: "What is Wayne's best friend's last name?",
     choices: ["Campbell", "Smith", "Algar", "McKeeta"],
     answer: "Algar",
-    image: ""
+    image: "https://media.giphy.com/media/ibMWGBvyIPxug/giphy.gif"
 }, {
     question: "What does Wayne spend his tv show cash on?",
     choices: ["Mustang", "concert tickets", "all the pizza", "Fender Stratacaster"],
