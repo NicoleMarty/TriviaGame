@@ -10,22 +10,33 @@ body {
 }
 
 #wrapper {
-    background-color: #ffffff;
+    background-image: url(../images/clouds.jpg);
+    background-position: center;
+    background-position: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #ff952b;
     position: relative;
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: 0px;
     text-align: center;
     padding-top: 5%;
     padding-bottom: 90%;
+    font-size: 24pt;
 }
 
 #subwrapper {
-    color: #ff952b;
+    color: #ffffff;
 }
 
 #start {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
     color: #Ffffff;
     background-color: #FF952B;
+}
+
+p {
+    font-size: 8pt;
 }
