@@ -109,7 +109,7 @@ var game = {
         console.log("results!");
         $("#correct").html("PARTY ON: " + game.correctAnswer);
         $("#incorrect").html("BUMMER: " + game.incorrectAnswer);
-        if (game.correctAnswer < game.incorrectAnswer) {
+        if (game.correctAnswer > game.incorrectAnswer) {
             $("#result").html("SCHWINNGGG! YOU'RE A WINNER!");
         } else {
             $("#result").html("BUMMER! You're partied out!");

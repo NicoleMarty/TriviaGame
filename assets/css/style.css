@@ -1,7 +1,7 @@
 body {
     background-image: url(../images/clouds.jpg);
     background-color: #2BCDFF;
-    color: #Ffffff;
+    color: #000000;
     background-position: center;
     background-position: no-repeat;
     background-size: cover;
@@ -27,7 +27,13 @@ body {
 }
 
 #subwrapper {
-    color: #ffffff;
+    color: #000000;
+    font-size: 18pt;
+}
+
+#title {
+    color: #ff952b;
+    background-blend-mode: luminosity;
 }
 
 #start {
@@ -35,8 +41,27 @@ body {
     font-size: 24pt;
     color: #Ffffff;
     background-color: #FF952B;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 p {
     font-size: 8pt;
+}
+
+.answer-button {
+    background-color: #FF952B;
+    color: #ffffff;
+    margin: 10px;
+    font-size: 24pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#results {
+    font-size: 24pt;
 }
