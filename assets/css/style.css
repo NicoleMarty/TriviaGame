@@ -15,7 +15,6 @@ body {
     background-position: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #ff952b;
     position: relative;
     margin-left: 25%;
     margin-right: 25%;
@@ -28,6 +27,11 @@ body {
 
 #subwrapper {
     color: #000000;
+    font-size: 18pt;
+}
+
+#subsubwrapper {
+    color: black;
     font-size: 18pt;
 }
 
@@ -64,4 +68,5 @@ p {
 
 #results {
     font-size: 24pt;
+    color: black;
 }
