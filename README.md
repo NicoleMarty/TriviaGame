@@ -1,11 +1,22 @@
 # TriviaGame
 
 ## Game Description
-
+I created a trivia form with multiple choice options
+The player has a limited amount of time to finish the quiz.
+The game ends when the time runs out. 
+The page reveals the number of questions that players answered correctly and incorrectly then lets them know if they won or lost.
 
 ## High-level overview of code organization
-
-
+TriviaGame
+    index2.html
+    index.html (file in progress to update game using bootstrap)
+        assets
+            css
+                style.css
+            javascript
+                app.js
+            images
+                background.jpg
 
 ## Start-to-finish instructions on how to run the game
 
@@ -18,9 +29,9 @@
 
 ## Technologies used in to build Wayne's World Trivia
 * JQuery
+* Javascript
 * HTML
 * CSS
-* GIPHY
 
 ## My role in development
 I made dis. :sunglasses:
