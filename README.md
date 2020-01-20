@@ -1,5 +1,8 @@
 # TriviaGame
 
+## Deployed Project
+https://nicolemarty.github.io/TriviaGame/
+
 ## Game Description
 I created a trivia form with multiple choice options
 The player has a limited amount of time to finish the quiz.
